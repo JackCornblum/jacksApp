@@ -1,15 +1,9 @@
 import { Text, View } from "react-native";
+import { registerRootComponent } from 'expo';
+import HomeScreen from "./App";
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Hello World</Text>
-    </View>
-  );
+function Index() {
+  return <HomeScreen />
 }
+
+registerRootComponent(Index);
