@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, SafeAreaView } from "react-native";
+import AuthLayout from "./auth/_layout";
 
 export default function HomeScreen() {
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: 'blue', justifyContent: 'center'}}>
-            <Text style={{borderWidth: 1, borderColor: 'red'}}>Hello World</Text>
+            <AuthLayout />
         </SafeAreaView>
     )
 }
